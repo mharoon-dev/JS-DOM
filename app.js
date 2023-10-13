@@ -24,6 +24,7 @@
 
 let body = document.querySelector('body')
 let h1 = document.querySelector('.h1')
+let h1Div = document.querySelector('.h1-div')
 let colors = [
     "red",
     "green",
@@ -38,6 +39,13 @@ function changeTheColor() {
     let change = colors[Math.floor(Math.random() * colors.length)]
     body.style.backgroundColor = change
        h1.textContent = change
+       if (change == "black") {
+        h1Div.style.backgroundColor = "white"
+        h1.style.color = "black"
+    } else {
+        h1Div.style.backgroundColor = "black"
+        h1.style.color = "white"
+       }
 }
 
 

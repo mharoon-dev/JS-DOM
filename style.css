@@ -7,12 +7,17 @@
 
 .change {
     padding: 10px 15px;
-    margin-top: auto;
+}
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
-
-
-/* .mainDiv {
+/* 
+ .mainDiv {
     display: flex;
     flex-direction: column;
     justify-content: center;
