@@ -84,11 +84,19 @@ let webPages = document.querySelector(".webPages")
 let leftSide = document.querySelector(".leftSide")
 let togglerBtn = document.querySelector(".togglerBtn")
 
-let attribute_webPages = webPages.getAttribute("class")
-let attribute_leftSide = leftSide.getAttribute("class")
-let attribute_togglerBtn = togglerBtn.getAttribute('class')
-console.log(attribute_webPages);
-console.log(attribute_leftSide);
-console.log(attribute_togglerBtn);
 
-attribute_webPages = webPages.setAttribute('')
+function navbar() {
+    const windowWidth = window.innerWidth;
+    if (windowWidth <= 992 ) {
+        webPages.style.display = "none";
+        leftSide.style.display = "none";
+        togglerBtn.style.display = "block";
+    } else {
+        webPages.style.display = "block";
+        leftSide.style.display = "flex";
+        togglerBtn.style.display = "none";
+    }
+  }
+navbar();
+
+window.addEventListener('resize', navbar);

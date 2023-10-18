@@ -33,15 +33,16 @@ h1 {
 
 
 .main {
-    border: 2px solid red;
+    /* border: 2px solid red; */
     width: 100%;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    background-color: lightgrey;
 } 
 
 div {
-    border: 2px solid red;
+    /* border: 2px solid red; */
     width: 100%;
 }
 
@@ -49,21 +50,23 @@ div {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: 900;
     font-size: x-large;
+    padding-left: 15px;
 }
 ul {
-   display: flex;
-   justify-content: space-around;
-   align-items: center;
-   list-style: none;
-   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-   font-weight: 700;
-   text-transform: uppercase
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
 }
 
 .leftSide {
     display: flex;
-    justify-content: center;
+    justify-content: end;
     align-items: center;
+    padding-right: 15px;
 }
 
 .togglerBtn {
