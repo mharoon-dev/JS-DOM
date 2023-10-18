@@ -22,31 +22,31 @@
 
 // // task (change background color) 
 
-let body = document.querySelector('body')
-let h1 = document.querySelector('.h1')
-let h1Div = document.querySelector('.h1-div')
-let colors = [
-    "red",
-    "green",
-    "blue",
-    "yellow",
-    "yellow",
-    "grey",
-    "black",
-    "pink",
-]
-function changeTheColor() {
-    let change = colors[Math.floor(Math.random() * colors.length)]
-    body.style.backgroundColor = change
-       h1.textContent = change
-       if (change == "black") {
-        h1Div.style.backgroundColor = "white"
-        h1.style.color = "black"
-    } else {
-        h1Div.style.backgroundColor = "black"
-        h1.style.color = "white"
-       }
-}
+// let body = document.querySelector('body')
+// let h1 = document.querySelector('.h1')
+// let h1Div = document.querySelector('.h1-div')
+// let colors = [
+//     "red",
+//     "green",
+//     "blue",
+//     "yellow",
+//     "yellow",
+//     "grey",
+//     "black",
+//     "pink",
+// ]
+// function changeTheColor() {
+//     let change = colors[Math.floor(Math.random() * colors.length)]
+//     body.style.backgroundColor = change
+//        h1.textContent = change
+//        if (change == "black") {
+//         h1Div.style.backgroundColor = "white"
+//         h1.style.color = "black"
+//     } else {
+//         h1Div.style.backgroundColor = "black"
+//         h1.style.color = "white"
+//        }
+// }
 
 
 // // task (counter) 
@@ -76,3 +76,19 @@ function changeTheColor() {
 //     counter.innerHTML = number
 //     counter.style.color = "black"
 // }
+
+
+// nav bar
+
+let webPages = document.querySelector(".webPages")
+let leftSide = document.querySelector(".leftSide")
+let togglerBtn = document.querySelector(".togglerBtn")
+
+let attribute_webPages = webPages.getAttribute("class")
+let attribute_leftSide = leftSide.getAttribute("class")
+let attribute_togglerBtn = togglerBtn.getAttribute('class')
+console.log(attribute_webPages);
+console.log(attribute_leftSide);
+console.log(attribute_togglerBtn);
+
+attribute_webPages = webPages.setAttribute('')
